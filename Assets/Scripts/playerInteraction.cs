@@ -28,6 +28,14 @@ public class playerInteraction : MonoBehaviour
         {
             currentInteractObjScript.InfoMessage();
         }
+        else if (currentInteractObjScript.interType == InteractionObject.InteractableType.pickup)
+        {
+            currentInteractObjScript.Pickup();
+        }
+        else if (currentInteractObjScript.interType == InteractionObject.InteractableType.dialogue)
+        {
+            currentInteractObjScript.Dialogue();
+        }
     }
 
 
